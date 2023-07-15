@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar  */ 
+hr{
+    border: 1px solid black;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+
+}
+.ul-list{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 30%;
+    align-items: center;
+}
+.nav-btn{
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+/* yellow box  */
+
+.yellow-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    gap: 40px;
+}
+#yellow-heading{
+    font-size: 106px;
+    font-weight: 400;
+}
+.y-text{
+    font-size: 25px;
+}
+.btn-y{
+    font-size: 18px;
+    width: 30%;
+}
+.main-y-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* container  */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0px 150px 40px 150px;
+    grid-gap:30px;
+}
+
+/* last-section  */
+
+.last-sec{
+    display: flex;
+    padding: 40px 150px;
+    flex-direction: row;
+}
+/* scrollbar  */
+
+
+.scrollbar{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 15px;
+}
+.scroll-card{
+    display: flex;
+    justify-content: space-between;
+}
+.scroll-img{
+    display: flex;
+    justify-content: end;
+}
+/* right-sec  */
+
+.right-sec>ul>li{
+    padding: 8px 15px;
+    background-color: rgb(241, 237, 237);
+    display: inline-block;
+    border-radius: 30px;
+    margin: 6px;
+}
+.right-sec>ol>li{
+    display: inline-block;
+    color: rgb(157, 153, 153);
+    padding: 5px 10px;
+}
+.right-sec{
+    padding-left: 20px;
+    position: sticky;
+    top: 10px;
+    height: 400px;
+}
+
+
+/* responsive 768  */
+
+@media (max-width:768px){
+    .ul-list{
+        width: auto;
+        gap: 10px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    .btn-y{
+        width: auto;
+    }
+    #yellow-heading{
+        font-size: 70px;
+    }
+    .yellow-text{
+        margin-left: 10px;
+    }
+
+    .container{
+        padding: 5px;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .last-sec{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .right-sec{
+        /* position: none; */
+        height: auto;
+    }
+    .scrollbar{
+        width: 100%;
+    }
+}
